@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FCC2026 AV Room Receiver</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="av-page">
+  <main class="av-shell">
+    <video id="initVideo" class="init-video" preload="auto" playsinline>
+      <source id="videoSource" src="assets/initiation.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+
+    <section id="avOverlay" class="av-overlay">
+      <div class="theme-band top" aria-hidden="true"></div>
+      <div class="av-inner">
+        <img class="av-brand" src="assets/fcc2026-brand-lockup.png" alt="Future Cities Conference 2026 branding" />
+        <div class="badge">FCC2026 Gimmick · AV Room</div>
+        <h1 id="avTitle">AV Receiver Standby</h1>
+        <p id="avStatus">Click enable once, then wait for the stage command.</p>
+        <button id="enableBtn" class="btn primary big">Enable AV Audio / Video</button>
+        <div class="av-grid">
+          <span>Connection: <strong id="connectionState">Not connected</strong></span>
+          <span>Session: <strong id="avSession"></strong></span>
+          <span>Last command: <strong id="lastCommand">None</strong></span>
+        </div>
+      </div>
+      <div class="theme-band bottom" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="av.js"></script>
+</body>
+</html>

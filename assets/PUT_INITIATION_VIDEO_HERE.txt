@@ -1,0 +1,2 @@
+Put your FCC2026 initiation/rickroll MP4 video in this folder and name it initiation.mp4
+Recommended format: MP4/H.264, 1920x1080.
