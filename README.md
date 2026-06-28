@@ -79,3 +79,7 @@ https://YOUR-GITHUB-USERNAME.github.io/fcc2026-av/
 4. Keep the browser tab open.
 5. Wait for the stage command.
 6. When Stage says the approved phrase, this page plays `assets/initiation.mp4`.
+
+## Display fit note
+
+The AV receiver screen is designed for projector/full-screen use. Press `F11` in Chrome/Edge for full screen. The centre card now scales the FCC2026 artwork to fit within 16:9 displays without cutting the button or status area.
